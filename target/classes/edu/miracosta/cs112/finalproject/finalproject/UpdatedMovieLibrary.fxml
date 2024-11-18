@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="TOP_CENTER" style="-fx-padding: 20;">
+    <!-- MacBook-style control buttons -->
+    <!-- Title -->
+    <Label text="Movie Library" style="-fx-font-size: 24; -fx-font-weight: bold;" />
+
+    <!-- Movie Description -->
+    <TextArea fx:id="movieDescription" promptText="Movie Description" prefWidth="400" prefHeight="200" />
+
+    <!-- Search Field -->
+    <TextField fx:id="searchField" promptText="Search" prefWidth="400" />
+
+    <!-- Buttons -->
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Add Movie" fx:id="addButton" />
+        <Button text="Delete Movie" fx:id="deleteButton" />
+    </HBox>
+</VBox>
